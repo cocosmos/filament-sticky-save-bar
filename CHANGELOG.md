@@ -2,6 +2,13 @@
 
 All notable changes to `filament-sticky-save-bar` will be documented in this file.
 
+## [1.1.3](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.2...v1.1.3) (2026-06-23)
+
+
+### Bug Fixes
+
+* don't flag dirty after a non-mutating Livewire commit ([f3cdbb9](https://github.com/cocosmos/filament-sticky-save-bar/commit/f3cdbb9843b34ca64ed7a6b0219e91d1ed6486e5))
+
 ## [1.1.2](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.1...v1.1.2) (2026-06-17)
 
 
