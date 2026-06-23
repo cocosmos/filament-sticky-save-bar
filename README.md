@@ -171,6 +171,31 @@ class EditInvoice extends EditRecord
 
 ---
 
+## Custom Components
+
+The bar detects dirty state from native `input`/`change` events and from Filament toggles. Some custom components change their state through **Livewire actions** instead — e.g. a repeater-style list with "move up", "move down", or "disable" buttons — which don't emit a native event, so the bar can't see them automatically.
+
+For those cases, dispatch one of these events from your component. Any bubbling `CustomEvent` works (Alpine `$dispatch`, Livewire `$dispatch`, or plain `dispatchEvent`):
+
+| Event | Effect |
+|---|---|
+| `sticky-save-bar:mark-dirty` | Force the bar to show |
+| `sticky-save-bar:check` | Recompute dirty by comparing the form's current values against the baseline |
+| `sticky-save-bar:reset` | Treat the current state as clean — re-baseline and hide the bar |
+
+Example — show the bar whenever your component's Alpine `state` changes:
+
+```js
+// inside your component's x-data / alpine:init
+this.$watch('state', () => {
+    this.$dispatch('sticky-save-bar:mark-dirty');
+});
+```
+
+After your own save (or when the user reverts), dispatch `sticky-save-bar:reset` to mark the state clean again.
+
+---
+
 ## Translations
 
 The plugin ships with translations for 8 languages: `ar`, `de`, `en`, `es`, `fr`, `id`, `it`, `pt`.
