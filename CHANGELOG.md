@@ -2,6 +2,15 @@
 
 All notable changes to `filament-sticky-save-bar` will be documented in this file.
 
+## [1.1.4](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.3...v1.1.4) (2026-08-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump googleapis/release-please-action from 4.4.1 to 5.0.0 ([0b9a95b](https://github.com/cocosmos/filament-sticky-save-bar/commit/0b9a95b196677cf185aafdc070f48dd5515645bb))
+* **deps:** bump googleapis/release-please-action from 4.4.1 to 5.0.0 ([0b1d322](https://github.com/cocosmos/filament-sticky-save-bar/commit/0b1d32273c29d2c2aaedd70d3fc71a93e4cad5d7))
+* update release-please-action to v4.4.1 and add dependabot configuration ([361f99c](https://github.com/cocosmos/filament-sticky-save-bar/commit/361f99c9c296cb344e85b84e8e3aec2514c55081))
+
 ## [1.1.3](https://github.com/cocosmos/filament-sticky-save-bar/compare/v1.1.2...v1.1.3) (2026-06-23)
 
 
