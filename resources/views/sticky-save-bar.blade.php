@@ -355,7 +355,7 @@ window.__stickySaveBar = function (showOn, position) {
             let rect = mainCtn.getBoundingClientRect();
             this.$el.style.setProperty('--ssb-left', rect.left + 'px');
             this.$el.style.setProperty('--ssb-right', (document.documentElement.clientWidth - rect.right) + 'px');
-            this.$el.style.setProperty('--ssb-top', rect.top + 'px');
+            this.$el.style.setProperty('--ssb-top', (rect.top + window.scrollY) + 'px');
         },
 
         // Serialize the tracked form's state into a comparable string. Filament
